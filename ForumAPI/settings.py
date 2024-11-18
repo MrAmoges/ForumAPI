@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x(k@6a23fui1pr^82^zv)=4h(!$+v0qx@=ykx7zvs^up@g^ug*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'ForumAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ForumAPI',
-        'USER': 'postgres',
-        'PASSWORD': '9004',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR,
     }
 }
 
